@@ -1,0 +1,241 @@
+<div class="menu-city">
+    <p class="menu-city__text">Ваш город — </p>
+    <svg class="menu-city__icon" width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99866 1C2.42773 1 0.401808 4.1275 1.15707 7.45201C1.69496 9.81942 4.94308 16 5.99869 16C6.98499 16 10.294 9.81741 10.8403 7.45201C11.6005 4.15991 9.59051 1 5.99866 1ZM6.00018 7.85256C4.96926 7.85256 4.13373 7.00386 4.13373 5.95662C4.13373 4.90937 4.96926 4.06067 6.00018 4.06067C7.03111 4.06067 7.86664 4.90937 7.86664 5.95662C7.86664 7.00386 7.03111 7.85256 6.00018 7.85256Z" stroke="#69788C"/>
+    </svg>
+    <span class="menu-city__add-c">Москва?</span>
+    <button class="menu-city__btn">
+        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L4 4L1 7" stroke="white" stroke-width="2"/>
+        </svg>            
+    </button>
+    <div class="menu-city__popup-list" data-parent-block>
+        <div class="menu-city__popup-list--block">
+            <div class="menu-city__popup-list--top">
+                <p class="menu-city__popup-list--title">Выбор города</p>
+                <button class="esc-block" data-esc>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 4.66688L10.6669 0L12 1.33312L7.33312 6L12 10.6669L10.6669 12L6 7.33312L1.33312 12L0 10.6669L4.66688 6L0 1.33312L1.33312 0L6 4.66688Z" fill="#2B3B50"/>
+                </svg>                            
+            </button>
+            </div>
+            <div class="menu-city__popup-list--bottom">
+                <ul class="city_block__list">
+                    <li class="city_block__list-element"><a href="">Владимир</a></li>
+                    <li class="city_block__list-element"><a href="">Воронеж</a></li>
+                    <li class="city_block__list-element"><a href="">Казань</a></li>
+                    <li class="city_block__list-element"><a href="">Калуга</a></li>
+                    <li class="city_block__list-element"><a href="">Краснодар</a></li>
+                </ul>
+                <ul class="city_block__list">
+                    <li class="city_block__list-element _active"><a href="">Москва</a></li>
+                    <li class="city_block__list-element"><a href="">Нижний Новгород</a></li>
+                    <li class="city_block__list-element"><a href="">Пенза</a></li>
+                    <li class="city_block__list-element"><a href="">Рязань</a></li>
+                    <li class="city_block__list-element"><a href="">Саранск</a></li>
+                </ul>
+                <ul class="city_block__list">
+                    <li class="city_block__list-element"><a href="">Смоленск</a></li>
+                    <li class="city_block__list-element"><a href="">Тверь</a></li>
+                    <li class="city_block__list-element"><a href="">Тула</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="header__container container">
+
+        <div class="header__mobile">
+            <a href="" class="logo header__logo">
+                <picture class="logo__pic">
+                    <img src="./img/common/logo.svg" alt="Первя ступень" class="logo__img">
+                </picture>
+            </a>
+            <button class="gamburger">
+              <span></span><span></span><span></span>
+          </button>
+        </div>
+        <div class="header__desc">
+            <div class="header__top">
+                <nav class="header__nav header__top-nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <div class="dropdown">
+                                <span class="dropdown--title" data-dropdown> г. Москва</span>
+                                <div class="dropdown__body">
+                                    <h2 class="dropdown__body-title">Выбор города</h2>
+                                    <ul class="dropdown__body--list">
+                                        <li class="dropdown__body--list-element"><a href="">Владимир</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Воронеж</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Казань</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Калуга</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Краснодар</a></li>
+                                        <li class="dropdown__body--list-element _active"><a href="">Москва</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Нижний Новгород</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Пенза</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Рязань</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Саранск</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Смоленск</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Тверь</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Тула</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Как заказать</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Доставка и оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Монтаж</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="#" class="header__contacts-calc">
+                        <svg class="header__contacts-calc-icon">
+            <use xlink:href="./img/common/rocket.svg#rocket"></use>
+          </svg>
+                        <span class="button__text">Рассчитать стоимость за 10 минут</span>
+                    </a>
+                    <a href="tel:+74959746937" class="header__contacts-call">
+                        <span class="_only-desktop">+7 (495) 974-69-37</span>
+                        <span class="_only-mobile">Позвонить нам</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <a href="" class="logo header__logo">
+                    <picture class="logo__pic">
+                        <img src="./img/common/logo.svg" alt="Первя ступень" class="logo__img">
+                    </picture>
+                </a>
+                <nav class="header__nav header__bottom-nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item" data-catalog>
+                            <div class="dropdown dropdown--variable">
+                                <span class="dropdown--title" data-dropdown>Лестницы на металлокаркасе</span>
+                                <div class="dropdown__body dropdown__body--wide">
+                                    <ul class="dropdown__body--list">
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-1.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Ломаный косоур</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-2.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Тетива из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-4.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item" data-catalog>
+                            <a href="#" class="header__nav-link">Консольные</a>
+                        </li>
+                        <li class="header__nav-item" data-catalog>
+                            <a href="#" class="header__nav-link">Винтовые</a>
+                        </li>
+                        <li class="header__nav-item" data-catalog>
+                            <a href="#" class="header__nav-link">Эконом</a>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Наши работы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Отзывы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">О компании</a>
+                        </li>
+                        <li class="button-more">
+                            <span class="button-more__dot"></span>
+                            <span class="button-more__dot"></span>
+                            <span class="button-more__dot"></span>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list__dropdown-block">
+                        <li class="header__nav-list__dropdown-element">
+                            <a class="header__nav-list__dropdown-link" href="">Производство</a>
+                        </li>
+                        <li class="header__nav-list__dropdown-element _active">
+                            <a class="header__nav-list__dropdown-link" href="">Статьи</a>
+                        </li>
+                        <li class="header__nav-list__dropdown-element">
+                            <a class="header__nav-list__dropdown-link" href="">Вакансии</a>
+                        </li>
+                        <li class="header__nav-list__dropdown-element">
+                            <a class="header__nav-list__dropdown-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_mobile_menu" data-parent-block>
+                <div class="header_mobile_menu__block">
+                    <button class="esc-block" data-esc>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 4.66688L10.6669 0L12 1.33312L7.33312 6L12 10.6669L10.6669 12L6 7.33312L1.33312 12L0 10.6669L4.66688 6L0 1.33312L1.33312 0L6 4.66688Z" fill="#2B3B50"/>
+                        </svg>                            
+                    </button>
+                    <img class="header_mobile_menu__logo" src="./img/common/logo.svg" alt="">
+                    <ul class="header_mobile_menu__list-catalog">
+                        <li class="header_mobile_menu__list-element"><a href="">Лестницы</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">На металлокаркасе</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">Консольные</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">Винтовые</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">Эконом</a></li>
+                    </ul>
+
+                    <ul class="header_mobile_menu__list-all-menu">
+                        <li class="header_mobile_menu__list-all-element"><a href="">Как заказать?</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Доставка</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Монтаж</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Оплата</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Контакты</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Наши работы</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">О компании</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Отзывы</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Производство</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Вакансии</a></li>
+                    </ul>
+
+                    <div class="city_block">
+                        <p class="city_block__title">Ваш регион — Москва?</p>
+                        <ul class="city_block__list">
+                            <li class="city_block__list-element"><a href="">Владимир</a></li>
+                            <li class="city_block__list-element"><a href="">Воронеж</a></li>
+                            <li class="city_block__list-element"><a href="">Казань</a></li>
+                            <li class="city_block__list-element"><a href="">Калуга</a></li>
+                            <li class="city_block__list-element"><a href="">Краснодар</a></li>
+                            <li class="city_block__list-element _active"><a href="">Москва</a></li>
+                            <li class="city_block__list-element"><a href="">Нижний Новгород</a></li>
+                            <li class="city_block__list-element"><a href="">Пенза</a></li>
+                            <li class="city_block__list-element"><a href="">Рязань</a></li>
+                            <li class="city_block__list-element"><a href="">Саранск</a></li>
+                            <li class="city_block__list-element"><a href="">Смоленск</a></li>
+                            <li class="city_block__list-element"><a href="">Тверь</a></li>
+                            <li class="city_block__list-element"><a href="">Тула</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="header_mobile_menu__btn header_mobile_menu__calc" href="">Рассчитать смету за 10 минут</a>
+                    <button class="header_mobile_menu__btn header_mobile_menu__feedback">Позвонить нам</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>

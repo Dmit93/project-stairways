@@ -1,0 +1,100 @@
+<section class="poppa modal modal-callback" id="form-callback">
+    <div class="modal__inner">
+        <h2 class="modal__title">Наш менеджер позвонит <br> вам в течение 5 минут</h2>
+        <div class="modal__group">
+            <form action="./callback.php" class="form-callback shifter__form">
+                <fieldset class="radio__row">
+                    <label class="radio">
+                      <input type="radio" name="user_connect" class="radio__input">
+                      <span class="radio__check"></span>
+                      <span class="radio__title">Телефон</span>
+                    </label>
+                                        <label class="radio">
+                      <input type="radio" name="user_connect" class="radio__input">
+                      <span class="radio__check"></span>
+                      <span class="radio__title">Telegram</span>
+                    </label>
+                                        <label class="radio">
+                      <input type="radio" name="user_connect" class="radio__input">
+                      <span class="radio__check"></span>
+                      <span class="radio__title">WhatsApp</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-callback__row">
+                    @@include('../inputs/tel.html',{}) @@include('../inputs/name.html',{})
+                    <button class="button button--secondary button--icon-right nt-btn" type="submit">         
+                        <span class="button__text">Отправить</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<div class="poppa poppa--no-scroll poppa--wide" id="abouts">
+    <div class="poppa-abouts">
+        <div class="poppa__overlay--container">
+            <div class="poppa-slider">
+                <div class="swiper poppa-slider--swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide poppa-slider--slide">
+                            <img src="./img/common/about-video.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poppa__aligner">
+                <section class="poppa modal modal-abouts">
+                    <div class="modal__inner">
+                        <h2 class="modal__title">Лестница на&nbsp;стальном монокосоуре с&nbsp;площадкой</h2>
+                        <div class="modal__group">
+                            <ul class="projects-gallery-list">
+                                <li class="projects-gallery-list-element">
+                                    Где и когда:
+                                    <p>Пенза, 2022.</p>
+                                </li>
+                                <li class="projects-gallery-list-element">
+                                    Ограждение:
+                                    <p>закаленное стекло, толщиной 20 мм.</p>
+                                </li>
+                                <li class="projects-gallery-list-element">
+                                    Ступени:
+                                    <p>дуб.</p>
+                                </li>
+                            </ul>
+                            <p class="modal__group--desc">
+                                Элегантная лестница на тетиве из листа толщиной 8 мм. Ограждение из стекла зажато между пластинами каркаса и не имеет видимых узлов соединений. Благодаря такому подходу конструкция смотрится монолитной. Ступени из ясеня со встроенной интеллектуальной
+                                подсветкой. Зажигается последовательно при приближении к лестнице. Скорость зажигания, время срабатывания, и множество других настроек можно изменить с помощью блока управления подсветкой.
+                            </p>
+                            <button class="modal__group--btn">
+                                Хочу так же
+                            </button>
+                            <div class="modal__group--counter">
+                                <div class="modal__group--count">
+                                    <img class="modal__group--count--icon" src="./img/common/arrow-down.svg" alt="">
+                                    <div class="modal__group--count--n">
+                                        <span class="modal__group--count__index"></span>/<span class="modal__group--count__all"></span>
+                                    </div>
+                                    <p>Листайте вниз для просмотра фото</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

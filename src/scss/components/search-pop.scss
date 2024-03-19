@@ -1,0 +1,206 @@
+.search-pop {
+  display: none;
+  max-width: 100%;
+  height: 100%;
+  padding-top: 5.0rem;//80px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  @media (max-width: 768px) {
+    padding-top: 100px
+  }
+  @media (max-width: 601px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 112px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.poppa__overlay--search-pop .poppa__aligner {
+  align-items: flex-start;
+  padding: 0;
+}
+.poppa__overlay--search-pop .search-pop {
+  display: initial;
+}
+
+.search-pop__box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.search-pop__gallery {
+  @media (max-width: 601px) {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+}
+.search-pop__gallery-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    row-gap: 0;
+    column-gap: 0;
+    overflow-y: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.search-pop__gallery-inner .product-card{
+  @media (max-width: 601px) {
+    min-width: 330px;
+    margin-right: 8px;
+  }
+}
+
+.search-pop__box {
+  width: 100%;
+  max-width: 49.166666666666664vw;//708px;
+  margin-right: auto;
+  margin-bottom: 5rem;//80px;
+  margin-left: auto;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+  @media (max-width: 601px) {
+    margin-bottom: 60px;
+  }
+}
+
+.search-pop__suggests {
+  margin-bottom: 2.5rem;//40px;
+  @media (max-width: 768px) {
+    overflow: hidden;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    margin-bottom: 22px;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 44px;
+  }
+}
+.search-pop__suggests-track {
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  @media (max-width: 768px) {
+    margin-bottom: -20px;
+    overflow-x: auto;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    padding-left: 44px;
+    padding-right: 40px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 2.5rem;
+    padding-left: 2.5rem
+  }
+}
+.search-pop__suggest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.7857142857142857em 1.5714285714285714em 1em;//11px 22px 14px;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;//14
+  font-weight: 600;
+  line-height: 1.2142;
+  color: #000;
+  background: #f0f3f5;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  margin-bottom: 1.25rem;
+  @media (min-width: 602px) and (max-width: 768px) {
+    padding: 22px 44px 28px;
+    font-size: 28px;
+    margin-right: 16px;
+  }
+}
+.search-pop__suggest--search::before {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5625rem;//9px;
+  margin-bottom: -0.09375rem;//1.5px;
+  content: "";
+  background-color: #000;
+  @include getmask("../img/common/search-mask.svg");
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-right: 18px;
+    margin-bottom: -3px;
+    width: 32px;
+    height: 32px;
+  }
+}
+.search-pop__suggest--search:hover::before {
+  background-color: #fff;
+}
+.search-pop__suggest:last-child {
+  margin-right: 0;
+}
+.search-pop__suggest:hover {
+  @media (any-hover: hover) {
+    color: #fff;
+    background: var(--c-accent);
+  }
+}
+
+.search-pop__title {
+  margin-bottom: 0.9375rem;//15px;
+  color: #fff;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 34px;
+  }
+  @media (max-width: 768px) {
+    line-height: 1.2;
+  }
+  @media (max-width: 601px) {
+    // padding-left: 0;
+    margin-bottom: 17px;
+  }
+}
+.search-pop__results-count {
+  margin-bottom: 2.5rem;//40px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: #a1aeb3;
+  padding-left: 1.25rem;
+  @media (min-width: 768px) {
+    margin-bottom: 2.3125rem;//37px;
+  }
+}
+.search-pop__title + .search-pop__gallery {
+  margin-top: 2.5rem;//40px;
+  @media (max-width: 786px) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.search-pop__gallery .product-card {
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-right: 1rem;
+  }
+}
+.search-pop__gallery .product-card__info {
+  @media (max-width: 768px) {
+    max-width: 34.72222222222222vw;//500px;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    min-height: 600px;
+    min-width: 440px;
+  }
+}

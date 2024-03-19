@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <!--<meta http-equiv="Cache-Control" content="no-cache" >-->
+    <!--<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" >-->
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('tpls/header-more-categories.html',{})
+        <main>
+            @@include('tpls/breadcrumbs.html',{})
+            <section class="catalog section-page-m">
+                <div class="container">
+                    <h1 class="catalog-title section-title">
+                        Каталог лестниц
+                    </h1>
+                    <div class="catalog-items">
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="catalog-items--block">
+                            <a href="" class="catalog-items--link">
+                                <picture class="catalog-items__pic">
+                                    <img src="./img/featured/category.jpg" alt="" class="catalog-items__img">
+                                </picture>
+                                <h3 class="catalog-items--title">
+                                    Лестница на металлокаркасе Ломаный косоур
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;apikey=55053583-9704-4e95-8a17-d5e58aa501ff"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

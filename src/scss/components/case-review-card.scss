@@ -1,0 +1,83 @@
+.case-review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;//40px;
+  background: #5F6C75;
+  border-radius: var(--brad-regular);
+  @media (min-width: 602px) and (max-width: 768px) {
+    padding: 80px;
+    border-radius: 25px;
+  }
+}
+.case-review-card__top {
+  margin-bottom: 2.5rem;//40px;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 80px
+  }
+}
+.case-review-card__title {
+  margin-bottom: 0.5rem;
+  font-family: 'RF Dewi', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2142;
+  color: #A1AEB3;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 601px) {
+    margin-bottom: 12px;
+  }
+}
+.case-review-card__desc {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: #F0F3F5;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.case-review-card__pic {
+  display: block;
+  --size: 6.25rem;//100px;
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  @media (min-width: 602px) and (max-width: 768px) {
+    --size: 200px;
+  }
+}
+.case-review-card__img {
+  object-fit: cover;
+  border-radius: var(--brad-half);
+  @media (min-width: 602px) and (max-width: 768px) {
+    border-radius: 12px;
+  }
+}
+.case-review-card__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.case-review-card__profile-link {
+  display: block;
+  padding: 0 0.5rem 0.25rem;//0px 8px 4px;
+  background: #F0F3F5;
+  border-radius: var(--brad-half);
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 28px;
+    border-radius: 12px;
+    padding: 2px 16px 8px;
+  }
+}
+
+.case-review-card__bottom {
+   width: 100%;
+}

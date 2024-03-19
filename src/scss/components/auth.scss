@@ -1,0 +1,165 @@
+.auth {
+  opacity: 0;
+  transition: all 0.3s ease, pointer-events 0s;
+  position: absolute;
+  width: 21.52777777777778vw;//310px;
+  right: 0;
+  top: 2.5rem;//40px;
+  background: #5F6C75;
+  border-radius: var(--brad-regular);
+  pointer-events: none;
+  padding: 1.25rem;//20px;
+  // max-height: 557px;
+  color: #fff;
+  @media (max-width: 768px) {
+    width: 80vw;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    padding: 40px;
+    border-radius: 24.5px;
+    top: 80px;
+    width: 590px;
+  }
+}
+.auth--visible {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.auth__form {
+  margin-bottom: 1rem;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.auth__methods {
+  margin-bottom: 1.4375rem;//23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 46px;
+  }
+}
+
+.auth__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth__button-submit {
+  border-radius: var(--brad-half);
+  padding-left: 0.625rem;//10px;
+  padding-right: 0.625rem;//10px;
+  @media (min-width: 602px) and (max-width: 768px) {
+    border-radius: 12px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 11px;
+    padding-bottom: 14px;
+  }
+}
+
+.auth__fieldset {
+ display: none;
+}
+.auth__fieldset .input {
+  margin-bottom: 0.5rem;
+}
+.auth__fieldset--visible {
+  display: block;
+}
+
+.auth__pages-message {
+  z-index: 1;
+  min-height: 1.2em;
+  transition: all 0.3s ease;
+  transform: var(--message-transform);
+  transform-origin: top;
+  font-weight: 400;
+  font-size: 0.76rem;//12px;
+  line-height: 1.166;
+  color: #FFFFFF;
+  background: #A1AEB3;
+  border-radius: var(--brad-half);
+  padding: 0.3125rem 0.625rem 0.47rem;//5px 10px 8px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem; 
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding: 10px 20px 16px;
+    border-radius: 12px;
+  }
+}
+
+.auth__button-method-toggler {
+  --button-color: #fff;
+}
+
+.auth__name {
+  font-weight: 400;
+  font-size: 1.25rem;//20px;
+  line-height: 120%;
+  margin-bottom: 2.125rem;//34px;
+  display: block;
+  @media (max-width: 1280px) and (min-width: 769px) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 40px;
+    margin-bottom: 68px;
+  }
+}
+.auth__list-links {
+  font-size: 0.875rem;//14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.auth__list-item {
+  margin-bottom: 1rem;
+  @media (min-width: 769px) and (max-width: 1280px) {
+    margin-bottom: 10px;   
+    font-size: 10px;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+}
+.auth__logout {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 0.875rem;//14px;
+  font-weight: 400;
+  @media (min-width: 769px) and (max-width: 1280px) {
+    font-size: 10px;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+.auth__logout .button__icon {
+  background-color: #fff;
+  @include getmask("../img/common/logout.svg");
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  margin-bottom: -1px;
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding-bottom: 0;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    max-width: 32px;
+    height: 32px;
+    min-width: 32px;
+    margin-bottom: -2px;
+  }
+}

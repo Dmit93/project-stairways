@@ -1,0 +1,58 @@
+.numbers-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    text-align: center;
+    .numbers-about-card:first-child {
+        margin-right: 23px;
+    }
+    .numbers-about-card:last-child {
+        margin-left: 23px;
+    }
+    @media (max-width: 600px) {
+        padding-top: 8px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+        .numbers-about-card:first-child {
+            grid-column: 3/1;
+        }
+        .numbers-about-card:last-child {
+            margin-left: 0;
+            transform: translate(-18px, -3px);
+        }
+        .numbers-about-card:nth-of-type(2) {
+            transform: translate(-9px, -3px);
+        }
+    }
+}
+
+.numbers-about-card__digit {
+    font-family: var(--ff-title);
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1.6rem;
+    @media (max-width: 1300px) {
+        font-size: 48px;
+        margin-bottom: 22px;
+    }
+    @media (max-width: 992px) {
+        font-size: 48px;
+        margin-bottom: 18px;
+    }
+    @media (max-width: 650px) {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+}
+
+.numbers-about-card__desc {
+    font-size: 18px;
+    line-height: 1.5;
+    @media (max-width: 1300px) {
+        font-size: 14px;
+    }
+    @media (max-width: 992px) {
+        font-size: 12px;
+    }
+}

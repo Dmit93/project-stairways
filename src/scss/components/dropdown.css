@@ -1,0 +1,106 @@
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown._active .dropdown__body {
+  opacity: 1;
+  z-index: 999;
+  transform: translateY(40px);
+  visibility: visible;
+}
+
+.dropdown:after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%232B3B50'/%3E%3C/svg%3E%0A");
+  width: 8px;
+  height: 4px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 6px;
+}
+
+.dropdown__body {
+  cursor: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 456px;
+  padding: 36px 24px 48px;
+  box-shadow: 0px 16px 48px rgba(42, 46, 52, 0.1);
+  background: #fff;
+  border-radius: var(--radius-border);
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: .3s;
+}
+
+@media (max-width: 768px) {
+  .dropdown__body {
+    width: 300px;
+  }
+  .dropdown__body .dropdown__body--list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+  }
+}
+
+.dropdown__body-title {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: var(--ff-title);
+  margin-bottom: 24px;
+  color: var(--c-text-regular);
+}
+
+.dropdown__body--list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px 32px;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.dropdown__body--list-element {
+  width: max-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--c-text-regular);
+  font-family: 'Inter';
+}
+
+.dropdown__body--list-element._active {
+  color: #8196B1;
+}
+
+.esc-block {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #E1E6EC;
+  position: absolute;
+  top: 24px;
+  right: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esc-block svg {
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 600px) {
+  .esc-block {
+    top: 18px;
+    right: 28px;
+  }
+}

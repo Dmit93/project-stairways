@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Компоненты</title>
+    <link rel="stylesheet" href="./css/style.css" >
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" >
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" >
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" >
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- @@include('tpls/header.html',{}) -->
+
+      <main class="main">
+
+        <style>
+          .components__row {
+            margin-bottom: 2rem;
+          }
+        </style>
+        <section class="components">
+          <div class="components__row">
+            <button class="button button--primary">Первичная</button>
+            <button class="button button--secondary">Вторичная</button>
+            <button class="button button--secondary button--icon-right">
+              <span class="button__icon">
+                <svg>
+                  <use xlink:href="./img/common/viber.svg#viber">
+                </svg>
+              </span>
+              <span class="button__text">Вторичная c иконкой</span>
+            </button>
+          </div>
+          <div class="components__row" style="background: #ccc;">
+            <form>
+              <label class="input">
+                <input type="text" min="3" class="input__field" placeholder="required" required>
+              </label>
+                      @@include('tpls/inputs/tel.html',{})
+                      @@include('tpls/inputs/name.html',{})
+                      @@include('tpls/inputs/textarea.html',{})
+                      @@include('tpls/inputs/attach.html',{className:"input-attach--on"})
+              <button class="button button--primary">Submit</button>
+            </form>
+          </div>
+          <div class="components__row">
+            <button class="link">Ссылка</button>
+            <a href="#" class="link link--geo">Гео</a>
+            <a href="#" class="link link--tel">Телефон</a>
+            <a href="#" class="link link--email">Емейл</a>
+            <button class="link link--underlined">
+              <span class="link__text">Ссылка подчеркнутая</span>
+            </button>
+          </div>
+          <div class="components__row">
+            <div class="accordions">
+              <header class="accordions__header">
+                <h2 class="accordions__title">Условия заказа</h2>
+              </header>
+              <div class="accordions__body">
+                <article class="bayan accordion accordion--has-icon">
+                  <div class="accordion__head">
+                    <img src="./img/product/product-bullets/product-bullet-1.svg" alt="" class="accordion__icon">
+                    <h3 class="accordion__title">Производство лестницы в Пензе</h3>
+                  </div>
+                  <div class="accordion__body">
+                    <p class="accordion__desc">
+                      Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Quae dicta a accusamus dolorum itaque quod odio, illo adipisci asperiores laborioksam cumque minima sed fugiat harum distinctio corporis nesciunt reprehenderit pariatur?
+                    </p>
+                  </div>
+                </article>
+
+                <article class="bayan accordion accordion--has-icon">
+                  <div class="accordion__head">
+                    <img src="./img/product/product-bullets/product-bullet-2.svg" alt="" class="accordion__icon">
+                    <h3 class="accordion__title">Доставка в Москву</h3>
+                  </div>
+                  <div class="accordion__body">
+                    <p class="accordion__desc">
+                      Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Quae dicta a accusamus dolorum itaque quod odio, illo adipisci asperiores laborioksam cumque minima sed fugiat harum distinctio corporis nesciunt reprehenderit pariatur?
+                    </p>
+                  </div>
+                </article>
+                <article class="bayan accordion accordion--has-icon">
+                  <header class="accordion__head">
+                    <img src="./img/product/product-bullets/product-bullet-3.svg" alt="" class="accordion__icon">
+                    <h3 class="accordion__title">Монтаж</h3>
+                  </header>
+                  <div class="accordion__body">
+                    <p class="accordion__desc">
+                      Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Quae dicta a accusamus dolorum itaque quod odio, illo adipisci asperiores laborioksam cumque minima sed fugiat harum distinctio corporis nesciunt reprehenderit pariatur?
+                    </p>
+                  </div>
+                </article>
+                <article class="bayan accordion accordion--has-icon">
+                  <header class="accordion__head">
+                    <img src="./img/product/product-bullets/product-bullet-4.svg" alt="" class="accordion__icon">
+                    <h3 class="accordion__title">Наши представители в Москве</h3>
+                  </header>
+                  <div class="accordion__body">
+                    <p class="accordion__desc">
+                      Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Quae dicta a accusamus dolorum itaque quod odio, illo adipisci asperiores laborioksam cumque minima sed fugiat harum distinctio corporis nesciunt reprehenderit pariatur?
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- @@include('tpls/footer.html',{}) -->
+    </div>
+
+    <!-- @@include('tpls/modals.html', {}) -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

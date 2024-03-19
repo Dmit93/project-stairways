@@ -1,0 +1,117 @@
+.row-filters {
+  // display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.0rem;//32px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  column-gap: 0.5rem;//8px;
+  row-gap: 0.5rem;//8px;
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 601px) {
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+}
+
+.row-filters__select--has-label {
+  background-color: var(--bg);
+  border-radius: var(--brad);
+  padding-left: 0.9375rem;//15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @media (min-width: 602px) and (max-width: 768px) {
+    padding-left: 40px;
+  }
+}
+
+.row-filters__select {
+  min-width: fit-content;
+  --bg: #fff;
+  --angle-color: #000;
+  --value-color: #000;
+  --brad: var(--brad-half);
+  --maxw: 17.77777777777778vw;//256px;
+  z-index: 2;
+  position: relative;
+}
+.row-filters__select-label {
+  display: none;
+  margin-right: -8px;
+  z-index: 2;
+  position: relative;
+  white-space: nowrap;
+  color: var(--value-color, #000);
+  font-size: inherit;
+  // display: block;
+  font-size: var(--fz);
+  @media (max-width: 1024px) {
+      margin-right: auto;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+
+.row-filters__select > .select  {
+  position: static;
+}
+.row-filters__select > .select::before {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.row-filters__select .choices__inner  {
+  z-index: 7;
+  position: relative;
+  pointer-events: none;
+}
+.row-filters__select--has-label .choices__inner .select__item {
+  @media (max-width: 1023px) {
+    max-width: 50px;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.row-filters__select--has-label .row-filters__select-label  {
+  display: block;
+}
+.row-filters__select--has-label .select__item--selectable  {
+  background-color: transparent;
+}
+
+.row-filters__select--has-label.is-multiple .select__list--single > .select__item  {
+  @media (max-width: 1024px) {
+    color: transparent;
+  }
+}
+
+.row-filters__select--has-label .select__list--single > .select__item  {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  @media (max-width: 1024px) {
+    white-space: initial;
+    height: 42px;
+  }
+}
+
+
+.row-filters .select__list--dropdown .select__item {
+  @media (max-width: 1023px) {
+    margin-bottom: 8px;
+  }
+}

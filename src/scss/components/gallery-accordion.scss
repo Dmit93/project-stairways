@@ -1,0 +1,76 @@
+/*
+  <div class="gallery-accordion" data-start-show="5">
+    <div class="container gallery-accordion__container">
+      <div class="gallery-accordion__content person-result__gallery-content">
+        <article class="gallery-accordion__item">
+        </article>
+      </div>
+      <button class="button--thirdly gallery-accordion__button-more">См. все фото (6)</button>
+    </div>
+  </div>
+
+  - data-start-show — сколько айтемов показывать изначально. По дефолту 3
+  - Для `gallery-accordion__content` можно задавать любую раскладку, которая нужна, добавив класс или перебив специфичность селектора
+  - gallery-accordion__item можно добавить любые классы и изменить тег на нужный
+*/
+
+.gallery-accordion__container {
+  max-width: 1200px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1600px) {
+    max-width: 100%;   
+  }
+}
+
+.gallery-accordion__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1.625rem;//26px;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 52px;
+  }
+}
+.gallery-accordion__item {
+  transition: all 0.3s ease;
+  opacity: 0;
+  max-height: 1px;
+  height: auto;
+  overflow: hidden;
+  pointer-events: none;
+}
+.gallery-accordion__item--visible {
+  opacity: 1;
+  // height: 348px;
+  max-height: 1000px;
+  overflow: initial;
+  pointer-events: initial;
+}
+
+.gallery-accordion .button--light {
+  --button-color: #000;
+}
+.gallery-accordion__button-more {
+  margin-left: auto;
+  margin-right: auto;
+  --button-color: #A1AEB3;
+  font-size: 0.875rem;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 24px;
+  }
+  @media (max-width: 601px) {
+    font-size: 12px;
+  }
+}
+.gallery-accordion__button-more--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gallery-accordion-modal {
+  display: none;
+}

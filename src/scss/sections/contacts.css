@@ -1,0 +1,71 @@
+.page-contacts {
+  margin-top: 96px;
+}
+
+.page-contacts__title {
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.page-contacts__box {
+  display: flex;
+  grid-gap: 36px;
+}
+
+.page-contacts__map {
+  height: 720px;
+  width: 100%;
+}
+
+.page-contacts__left {
+  height: max-content;
+}
+
+.page-contacts__left .accordion {
+  border: none;
+  margin-bottom: 24px;
+}
+
+.page-contacts__left .accordion.bayan--opened {
+  background: transparent;
+  margin-bottom: calc(24px * 2);
+}
+
+.page-contacts__left .accordion.bayan--opened .bayan__top {
+  background: #8196B1;
+}
+
+.page-contacts__left .accordion.bayan--opened .accordion__title {
+  color: #fff;
+}
+
+.page-contacts__left .accordion .bayan__toggler {
+  background: transparent;
+}
+
+.page-contacts__left .bayan__top {
+  border: 1px solid #DDE0E3;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.page-contacts__left .accordion__head {
+  padding: 0;
+}
+
+.page-contacts__left .accordion__title {
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-contacts__left .bayan__bottom {
+  background: #F2F6FA;
+}
+
+.page-contacts__left .accordion__body {
+  padding: 24px;
+}

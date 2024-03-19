@@ -1,0 +1,46 @@
+:root {
+  --index: calc(1vw + 1vh);
+  --radius-border: 4px;
+  --c-text-regular: #2B3B50;
+  --c-text-secondary: #77828F;
+  --icon-color: #8196B1;
+  --c-text-on: #fff;
+  --bg-element: #fff;
+  --bg-app: #fff;
+  --bg-dropdown: #384043;
+  --bg-dropdown-list: #4e5557;
+  --bg-poppa: #171b1f;
+  --radius-poppa: 10px;
+  --overlay-poppa: rgba(0, 0, 0, 0.8);
+  --tr: 0.3s;
+  --tr-regular: all var(--tr) ease;
+  --ff-regular: "Inter", sans-serif;
+  --ff-title: "TTProstoSans", sans-serif;
+  --brad-regular: 4px;
+  --w-container: 1186px;
+  --error: #e71717;
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --w-container: 1580px;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --w-container: 2090px;
+  }
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --w-container: calc(100% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --w-container: 100%;
+  }
+}

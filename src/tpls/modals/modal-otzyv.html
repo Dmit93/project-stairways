@@ -1,0 +1,35 @@
+<section class="poppa modal" id="otzyv-callback" >
+    <div class="modal__inner">
+        <h2 class="modal__title modal__title--review">Оставьте свой отзыв о нашей<br> работе прямо сейчас</h2>
+        <div class="modal__group">
+            <form action="./callback.php" class="form-callback shifter__form">
+                <fieldset class="form-callback__row">
+                    @@include('../inputs/name.html',{}) @@include('../inputs/family.html',{}) @@include('../inputs/select.html',{}) @@include('../inputs/tel.html',{}) @@include('../inputs/textarea.html',{})
+
+
+                    <label class="input-attach">
+                        <input
+                          class="input-attach__field"
+                          name="user_file"
+                          type="file"
+                        >
+                        <span class="input-attach__box-icon">
+                        <svg class="input-attach__icon">
+                          <use xlink:href="./img/common/attach-white.svg#attach-white" />
+                        </svg>
+                      </span>
+                        <span class="input-attach__text link link--underlined"><span class="link__text">Прикрепить файл</span></span>
+                      </label>
+                    <div class="form-bottom-send">
+                        <button class="button button--secondary button--icon-right nt-btn" type="button">         
+                            <span class="button__text">Отправить</span>
+                        </button>
+                        <p class="form-policy-in-btn">
+                            Нажимая кнопку “Отправить”, вы даете согласие на <br>обработку персональных данных
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,133 @@
+.link {
+    --link-color: var(--c-text-regular);
+    --link-icon: var(--icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--link-color);
+    font-size: inherit;
+}
+.link:hover {
+    @media (any-hover: hover) {
+        --link-color: var(--c-text-secondary)
+    }
+}
+.link::before {
+    display: block;
+    width: 0.75em;
+    height: 0.75em;
+    margin-right: 0.75em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--link-icon);
+}
+
+.link-popup .link__text {
+    padding-bottom: 5px;
+    background-image: linear-gradient(to right, rgba(149, 157, 167, 1) 4px, transparent 4px);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    transition: all .45s ease;
+}
+.link-popup:hover .link__text {
+    @media (any-hover:hover) {
+        background-size: 1px 1px;
+        // background-image: linear-gradient(to right, rgba(149, 157, 167, 0) 4px, transparent 4px);
+    }
+}
+
+.link-regular .link__text {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #959da7;
+    transition: .45s ease;
+}
+.link-regular:hover .link__text {
+    @media (any-hover:hover) {
+        border-color: transparent;
+    }
+}
+
+.link--external {
+    display: flex;
+    align-items: center;
+}
+.link--external::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-color: #77828F;
+    margin-top: -0.5em;
+    margin-left: 0.4em;
+    @include getmask("../img/common/arrow-right-up-mask.svg");
+    transition: 0.45s ease;
+}
+.link--external:hover::after {
+    @media (any-hover:hover) {
+        background-color: #8196B1;
+    }
+}
+.link--external .link__text {
+    padding-bottom: 5px;
+}
+
+.link--geo::before {
+    content: "";
+    @include getmask("../img/common/geo-icon.svg");
+}
+
+.link--email::before {
+    content: "";
+    @include getmask("../img/common/email-icon.svg");
+}
+
+.link--tel::before {
+    content: "";
+    @include getmask("../img/common/phone-icon.svg");
+}
+
+.link--underlined {
+    @media (max-width:600px) {
+        width: 100%;
+        .link__text:not(.offer__link--text) {
+            width: 100%;
+            padding: 14px 24px;
+        }
+    }
+}
+.link--underlined .link__text {
+    background-image: linear-gradient(to right, #959DA7 4px, transparent 4px);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    padding-bottom: 5px;
+    transition: .45s;
+    @media (max-width: 1300px) {
+        &:not(.offer__link--text) {
+            font-size: 12px;
+        }
+    }
+    @media (max-width: 992px) {
+        &:not(.offer__link--text) {
+            background: #E1E6EC;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #1D2025;
+            font-family: 'OpenSans';
+            padding: 12px 24px;
+            border-radius: var(--radius-border)
+        }
+    }
+}
+.link--underlined:hover .link__text {
+    @media (any-hover:hover) {
+        // background-image: linear-gradient(to right, transparent 4px, transparent 4px);
+        color: var(--c-text-regular);
+        background-size: 1px 1px;
+    }
+}

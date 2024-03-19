@@ -1,0 +1,129 @@
+.catalog-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 64px 36px;
+}
+
+@media (max-width: 1300px) {
+  .catalog-items {
+    grid-gap: 48px 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .catalog-items {
+    grid-gap: 24px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.catalog-items__img {
+  height: 524px;
+  object-fit: cover;
+}
+
+@media (max-width: 1300px) {
+  .catalog-items__img {
+    height: 383px;
+  }
+}
+
+@media (max-width: 992px) {
+  .catalog-items__img {
+    height: 204px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-items__img {
+    height: 153px;
+  }
+}
+
+.catalog-items--title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  font-family: var(--ff-title);
+  color: var(--c-text-regular);
+  margin-top: 24px;
+}
+
+@media (max-width: 992px) {
+  .catalog-items--title {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-items--title {
+    font-size: 12px;
+    line-height: 130%;
+  }
+}
+
+.catalog-title.section-title {
+  margin-bottom: 64px;
+}
+
+@media (max-width: 1300px) {
+  .catalog-title.section-title {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-title.section-title {
+    margin-bottom: 24px;
+  }
+}
+
+.catalog-project .tabs {
+  overflow: visible;
+}
+
+.catalog-project.catalog-project {
+  margin-bottom: 160px;
+}
+
+.catalog-project .tabs__toggler-container {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.catalog-project .projects-gallery-carousel > .swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 31.4%);
+  grid-gap: 48px 36px;
+}
+
+.catalog-project .swiper-buttons {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .catalog-project .projects-gallery-carousel > .swiper-wrapper {
+    grid-gap: 48px 24px;
+    grid-template-columns: repeat(3, 32%);
+  }
+}
+
+@media (max-width: 992px) {
+  .catalog-project .projects-gallery-carousel > .swiper-wrapper {
+    grid-gap: 24px 16px;
+    grid-template-columns: repeat(3, 32%);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-project .projects-gallery-carousel > .swiper-wrapper {
+    grid-gap: 24px;
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  --nav-title-color: var(--c-text-on-secondary);
+  --nav-item-color: var(--c-text-on);
+  --title-bottom: 12px;
+  --item-bottom: 8px;
+  --item-fz: 1rem;
+  --title-fz: 0.875rem;
+  text-transform: initial;
+  @media (max-width: 576px) {
+  }
+}
+.nav__list {
+  min-width: 202px;
+  @media (max-width: 576px) {
+    min-width: initial;
+  }
+}
+.nav__list:first-child {
+  @media (max-width: 576px) {
+    margin-right: 56px
+  }
+}
+.nav__item {
+  margin-bottom: var(--item-bottom);
+  font-size: var(--item-fz);
+  font-weight: 400;
+  line-height: 1.1875;//19px;
+  color: var(--nav-item-color);
+  @media (max-width: 576px) {
+    margin-bottom: 13px
+  }
+}
+.nav__item:last-of-type {
+  @media (max-width: 601px) {
+    margin-bottom: 0;
+  }
+}
+.nav__item--bold {
+  font-weight: 600;
+}
+.nav__list-title {
+  margin-bottom: var(--title-bottom);
+  font-size: var(--title-fz);
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--nav-title-color);
+  @media (max-width: 576px) {
+    margin-bottom: 20px;
+  }
+}
+.nav__list--contacts {
+  margin-left: auto;
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 2px;
+  @media (max-width: 768px) {
+    text-align: left;
+    margin-left: unset
+  }
+}
+.nav__list--contacts .nav__item {
+  margin-bottom: 1.05em;//21px;
+  font-size: 1.25rem;//20px;
+  font-weight: 400;
+  line-height: 120%;
+  @media (max-width: 1024px) and (min-width: 769px) {
+    font-size: 9.96px;
+  }
+  @media (max-width: 768px) and (min-width: 602px) {
+    font-size: 32px;
+  }
+  @media (max-width: 601px) {
+    margin-bottom: 32px;
+    font-size: 14px
+  }
+}
+.nav__list--contacts .nav__item:last-child {
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.nav__list--contacts .nav__list-title {
+  margin-bottom: 3px;
+  @media (max-width: 601px) {
+    margin-bottom: 8px;
+  }
+}
+
+.nav__link {
+  transition: all 0.3s ease;
+  font-weight: inherit;
+  @media (max-width: 576px) {
+    font-size: 16px
+  }
+}
+.nav__link:hover {
+  @media (any-hover: hover) {
+    color: var(--c-text-on-secondary);
+  }
+}

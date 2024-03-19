@@ -1,0 +1,88 @@
+.input-attach {
+    --icon-color: var(--c-text-regular);
+    --icon-size: 2.5rem;
+    --color: var(--c-text-regular);
+    --underline-color: #959DA7;
+    display: flex;
+    cursor: pointer;
+    border-radius: var(--radius-border);
+    transition: all 0.3s ease;
+    @media (max-width: 992px) {
+        background: #E1E6EC;
+        align-items: center;
+        padding: 12px 24px;
+        width: max-content;
+        .input-attach__icon {
+            --size: 16px;
+            margin-right: 8px;
+        }
+        .input-attach__text.link .link__text {
+            padding: 0
+        }
+    }
+    @media (max-width: 650px) {
+        width: auto;
+        justify-content: center;
+        padding: 16px 0;
+        font-size: 12px;
+        line-height: 100%;
+        .input-attach__icon {
+            --size: 24px;
+        }
+        .link {
+            width: auto;
+        }
+    }
+}
+
+.input-attach__field {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.input-attach--on {
+    --icon-color: var(--c-text-on);
+    --color: var(--c-text-on);
+}
+
+.input-attach__icon {
+    display: block;
+    --size: var(--icon-size);
+    max-width: var(--size);
+    min-width: var(--size);
+    width: var(--size);
+    height: var(--size);
+    fill: var(--icon-color);
+    margin-right: 0.75rem;
+    @media (max-width: 1300px) {
+        --size: 24px;
+    }
+}
+
+.input-attach__text {
+    --link-color: var(--color);
+}
+
+.input-attach:hover .input-attach__text {
+    @media (any-hover: hover) {
+        --link-color: var(--color);
+    }
+}
+.input-attach:hover .input-attach__icon {
+    @media (any-hover: hover) {
+        fill: #556273;
+    }
+}
+
+.input-attach__text .link__text {
+    padding-bottom: 7px;
+    border-width: 2px;
+    border-color: var(--underline-color);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1D2025;
+    font-size: 14px;
+    font-weight: 500;
+}

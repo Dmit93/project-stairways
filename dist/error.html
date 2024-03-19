@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/style.css?_v=20230217185727" >
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" >
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <!--<meta http-equiv="Cache-Control" content="no-cache" >-->
+    <!--<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" >-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu-city">
+    <p class="menu-city__text">Ваш город — </p>
+    <svg class="menu-city__icon" width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99866 1C2.42773 1 0.401808 4.1275 1.15707 7.45201C1.69496 9.81942 4.94308 16 5.99869 16C6.98499 16 10.294 9.81741 10.8403 7.45201C11.6005 4.15991 9.59051 1 5.99866 1ZM6.00018 7.85256C4.96926 7.85256 4.13373 7.00386 4.13373 5.95662C4.13373 4.90937 4.96926 4.06067 6.00018 4.06067C7.03111 4.06067 7.86664 4.90937 7.86664 5.95662C7.86664 7.00386 7.03111 7.85256 6.00018 7.85256Z" stroke="#69788C"/>
+    </svg>
+    <span class="menu-city__add-c">Москва?</span>
+    <button class="menu-city__btn">
+        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L4 4L1 7" stroke="white" stroke-width="2"/>
+        </svg>            
+    </button>
+    <div class="menu-city__popup-list" data-parent-block>
+        <div class="menu-city__popup-list--block">
+            <div class="menu-city__popup-list--top">
+                <p class="menu-city__popup-list--title">Выбор города</p>
+                <button class="esc-block" data-esc>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 4.66688L10.6669 0L12 1.33312L7.33312 6L12 10.6669L10.6669 12L6 7.33312L1.33312 12L0 10.6669L4.66688 6L0 1.33312L1.33312 0L6 4.66688Z" fill="#2B3B50"/>
+                </svg>                            
+            </button>
+            </div>
+            <div class="menu-city__popup-list--bottom">
+                <ul class="city_block__list">
+                    <li class="city_block__list-element"><a href="">Владимир</a></li>
+                    <li class="city_block__list-element"><a href="">Воронеж</a></li>
+                    <li class="city_block__list-element"><a href="">Казань</a></li>
+                    <li class="city_block__list-element"><a href="">Калуга</a></li>
+                    <li class="city_block__list-element"><a href="">Краснодар</a></li>
+                </ul>
+                <ul class="city_block__list">
+                    <li class="city_block__list-element _active"><a href="">Москва</a></li>
+                    <li class="city_block__list-element"><a href="">Нижний Новгород</a></li>
+                    <li class="city_block__list-element"><a href="">Пенза</a></li>
+                    <li class="city_block__list-element"><a href="">Рязань</a></li>
+                    <li class="city_block__list-element"><a href="">Саранск</a></li>
+                </ul>
+                <ul class="city_block__list">
+                    <li class="city_block__list-element"><a href="">Смоленск</a></li>
+                    <li class="city_block__list-element"><a href="">Тверь</a></li>
+                    <li class="city_block__list-element"><a href="">Тула</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="header__container container">
+
+        <div class="header__mobile">
+            <a href="" class="logo header__logo">
+                <picture class="logo__pic">
+                    <img src="./img/common/logo.svg" alt="Первя ступень" class="logo__img">
+                </picture>
+            </a>
+            <button class="gamburger">
+              <span></span><span></span><span></span>
+          </button>
+        </div>
+        <div class="header__desc">
+            <div class="header__top">
+                <nav class="header__nav header__top-nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <div class="dropdown">
+                                <span class="dropdown--title" data-dropdown> г. Москва</span>
+                                <div class="dropdown__body">
+                                    <h2 class="dropdown__body-title">Выбор города</h2>
+                                    <ul class="dropdown__body--list">
+                                        <li class="dropdown__body--list-element"><a href="">Владимир</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Воронеж</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Казань</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Калуга</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Краснодар</a></li>
+                                        <li class="dropdown__body--list-element _active"><a href="">Москва</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Нижний Новгород</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Пенза</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Рязань</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Саранск</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Смоленск</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Тверь</a></li>
+                                        <li class="dropdown__body--list-element"><a href="">Тула</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Как заказать</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Доставка и оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Монтаж</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="#" class="header__contacts-calc">
+                        <svg class="header__contacts-calc-icon">
+                            <use xlink:href="./img/common/rocket.svg#rocket"></use>
+                          </svg>
+                        <span class="button__text">Рассчитать стоимость за 10 минут</span>
+                    </a>
+                    <a href="tel:+74959746937" class="header__contacts-call">
+                        <span class="_only-desktop">+7 (495) 974-69-37</span>
+                        <span class="_only-mobile">Позвонить нам</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <a href="" class="logo header__logo">
+                    <picture class="logo__pic">
+                        <img src="./img/common/logo.svg" alt="Первя ступень" class="logo__img">
+                    </picture>
+                </a>
+                <nav class="header__nav header__bottom-nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item" data-catalog>
+                            <div class="dropdown dropdown--variable">
+                                <span class="dropdown--title" data-dropdown>Лестницы на металлокаркасе</span>
+                                <div class="dropdown__body dropdown__body--wide">
+                                    <ul class="dropdown__body--list">
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-1.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Ломаный косоур</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-2.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Тетива из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-4.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-4.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-1.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-2.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-4.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                        <li class="dropdown__body--list-element">
+                                            <img src="./img/catalog/catalog-4.jpg" alt="" class="dropdown__body--list-element-img">
+                                            <a href="">Монокосоур из листа</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item" data-catalog>
+                            <a href="#" class="header__nav-link">Консольные</a>
+                        </li>
+                        <li class="header__nav-item" data-catalog>
+                            <a href="#" class="header__nav-link">Винтовые</a>
+                        </li>
+                        <li class="header__nav-item" data-catalog>
+                            <a href="#" class="header__nav-link">Эконом</a>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Наши работы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Отзывы</a>
+                        </li>
+                        <li class="header__nav-item header__nav-item-dropdown">
+                            <a href="#" class="header__nav-link header__nav-link-dropdown">О компании</a>
+                            <span class="button-more">
+                                <span class="button-more__dot"></span>
+                                <span class="button-more__dot"></span>
+                                <span class="button-more__dot"></span>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list__dropdown-block">
+                        <li class="header__nav-list__dropdown-element">
+                            <a class="header__nav-list__dropdown-link" href="">Производство</a>
+                        </li>
+                        <li class="header__nav-list__dropdown-element _active">
+                            <a class="header__nav-list__dropdown-link" href="">Статьи</a>
+                        </li>
+                        <li class="header__nav-list__dropdown-element">
+                            <a class="header__nav-list__dropdown-link" href="">Вакансии</a>
+                        </li>
+                        <li class="header__nav-list__dropdown-element">
+                            <a class="header__nav-list__dropdown-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_mobile_menu" data-parent-block>
+                <div class="header_mobile_menu__block">
+                    <button class="esc-block" data-esc>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 4.66688L10.6669 0L12 1.33312L7.33312 6L12 10.6669L10.6669 12L6 7.33312L1.33312 12L0 10.6669L4.66688 6L0 1.33312L1.33312 0L6 4.66688Z" fill="#2B3B50"/>
+                        </svg>                            
+                    </button>
+                    <img class="header_mobile_menu__logo" src="./img/common/logo.svg" alt="">
+                    <ul class="header_mobile_menu__list-catalog">
+                        <li class="header_mobile_menu__list-element"><a href="">Лестницы</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">На металлокаркасе</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">Консольные</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">Винтовые</a></li>
+                        <li class="header_mobile_menu__list-element"><a href="">Эконом</a></li>
+                    </ul>
+
+                    <ul class="header_mobile_menu__list-all-menu">
+                        <li class="header_mobile_menu__list-all-element"><a href="">Как заказать?</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Доставка</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Монтаж</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Оплата</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Контакты</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Наши работы</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">О компании</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Отзывы</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Производство</a></li>
+                        <li class="header_mobile_menu__list-all-element"><a href="">Вакансии</a></li>
+                    </ul>
+
+                    <div class="city_block">
+                        <p class="city_block__title">Ваш регион — Москва?</p>
+                        <ul class="city_block__list">
+                            <li class="city_block__list-element"><a href="">Владимир</a></li>
+                            <li class="city_block__list-element"><a href="">Воронеж</a></li>
+                            <li class="city_block__list-element"><a href="">Казань</a></li>
+                            <li class="city_block__list-element"><a href="">Калуга</a></li>
+                            <li class="city_block__list-element"><a href="">Краснодар</a></li>
+                            <li class="city_block__list-element _active"><a href="">Москва</a></li>
+                            <li class="city_block__list-element"><a href="">Нижний Новгород</a></li>
+                            <li class="city_block__list-element"><a href="">Пенза</a></li>
+                            <li class="city_block__list-element"><a href="">Рязань</a></li>
+                            <li class="city_block__list-element"><a href="">Саранск</a></li>
+                            <li class="city_block__list-element"><a href="">Смоленск</a></li>
+                            <li class="city_block__list-element"><a href="">Тверь</a></li>
+                            <li class="city_block__list-element"><a href="">Тула</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="header_mobile_menu__btn header_mobile_menu__calc" href="">Рассчитать смету за 10 минут</a>
+                    <button class="header_mobile_menu__btn header_mobile_menu__feedback">Позвонить нам</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+      <main class="main">
+        <section class="message">
+          <div class="message__container">
+            <article class="message-card">
+              <h1 class="message-card__title">Ошибка 404</h1>
+              <p class="message-card__desc">Страница не найдена</p>
+              <a href="#" class="button button--primary button--dark message-card__button">Вернуться на главную страницу</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+    </div>
+
+     <section class="poppa modal" id="pod-callback">
+    <div class="modal__inner">
+        <h2 class="modal__title">Вам нужна винтовая лестница <br> на металлокаркасе?</h2>
+        <div class="modal__group">
+            <form action="./callback.php" class="form-callback shifter__form">
+                <fieldset class="radio__row">
+                    <label class="radio">
+                        <input type="radio" name="user_connect" class="radio__input">
+                        <span class="radio__check"></span>
+                        <span class="radio__title">Телефон</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="user_connect" class="radio__input">
+                        <span class="radio__check"></span>
+                        <span class="radio__title">Telegram</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="user_connect" class="radio__input">
+                        <span class="radio__check"></span>
+                        <span class="radio__title">WhatsApp</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-callback__row">
+                    <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Телефон"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  >
+</label>
+ <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Ваше имя"
+    data-value-missing="Напишите имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  >
+</label>
+
+                    <button class="button button--secondary button--icon-right nt-btn" type="submit">         
+                      <span class="button__text">Отправить</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+ <section class="poppa modal modal-callback" id="form-callback">
+    <div class="modal__inner">
+        <h2 class="modal__title">Наш менеджер позвонит <br> вам в течение 5 минут</h2>
+        <div class="modal__group">
+            <form action="./callback.php" class="form-callback shifter__form">
+                <fieldset class="radio__row">
+                    <label class="radio">
+                      <input type="radio" name="user_connect" class="radio__input">
+                      <span class="radio__check"></span>
+                      <span class="radio__title">Телефон</span>
+                    </label>
+                                        <label class="radio">
+                      <input type="radio" name="user_connect" class="radio__input">
+                      <span class="radio__check"></span>
+                      <span class="radio__title">Telegram</span>
+                    </label>
+                                        <label class="radio">
+                      <input type="radio" name="user_connect" class="radio__input">
+                      <span class="radio__check"></span>
+                      <span class="radio__title">WhatsApp</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-callback__row">
+                    <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Телефон"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  >
+</label>
+ <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Ваше имя"
+    data-value-missing="Напишите имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  >
+</label>
+
+                    <button class="button button--secondary button--icon-right nt-btn" type="submit">         
+                        <span class="button__text">Отправить</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<div class="poppa poppa--no-scroll poppa--wide" id="abouts">
+    <div class="poppa-abouts">
+        <div class="poppa__overlay--container">
+            <div class="poppa-slider">
+                <div class="swiper poppa-slider--swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide poppa-slider--slide">
+                            <img src="./img/common/about-video.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/common/about-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poppa__aligner">
+                <section class="poppa modal modal-abouts">
+                    <div class="modal__inner">
+                        <h2 class="modal__title">Лестница на&nbsp;стальном монокосоуре с&nbsp;площадкой</h2>
+                        <div class="modal__group">
+                            <ul class="projects-gallery-list">
+                                <li class="projects-gallery-list-element">
+                                    Где и когда:
+                                    <p>Пенза, 2022.</p>
+                                </li>
+                                <li class="projects-gallery-list-element">
+                                    Ограждение:
+                                    <p>закаленное стекло, толщиной 20 мм.</p>
+                                </li>
+                                <li class="projects-gallery-list-element">
+                                    Ступени:
+                                    <p>дуб.</p>
+                                </li>
+                            </ul>
+                            <p class="modal__group--desc">
+                                Элегантная лестница на тетиве из листа толщиной 8 мм. Ограждение из стекла зажато между пластинами каркаса и не имеет видимых узлов соединений. Благодаря такому подходу конструкция смотрится монолитной. Ступени из ясеня со встроенной интеллектуальной
+                                подсветкой. Зажигается последовательно при приближении к лестнице. Скорость зажигания, время срабатывания, и множество других настроек можно изменить с помощью блока управления подсветкой.
+                            </p>
+                            <button class="modal__group--btn">
+                                Хочу так же
+                            </button>
+                            <div class="modal__group--counter">
+                                <div class="modal__group--count">
+                                    <img class="modal__group--count--icon" src="./img/common/arrow-down.svg" alt="">
+                                    <div class="modal__group--count--n">
+                                        <span class="modal__group--count__index"></span>/<span class="modal__group--count__all"></span>
+                                    </div>
+                                    <p>Листайте вниз для просмотра фото</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div> <section class="poppa modal" id="otzyv-callback" >
+    <div class="modal__inner">
+        <h2 class="modal__title modal__title--review">Оставьте свой отзыв о нашей<br> работе прямо сейчас</h2>
+        <div class="modal__group">
+            <form action="./callback.php" class="form-callback shifter__form">
+                <fieldset class="form-callback__row">
+                    <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Ваше имя"
+    data-value-missing="Напишите имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  >
+</label>
+ <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Ваша фамилия"
+    data-value-missing="Напишите фамилию"
+    data-value-invalid="Что-то не так с введенным фамилией"
+    autocomplete="name"
+  >
+</label> <select class="form-control select" data-trigger name="choices-single-default" id="choices-single-default">
+    <option value="">Выберите город</option>
+    <option value="msk">Москва</option>
+    <option value="pnz">Пенза</option>
+    <option value="krd">Краснодар</option>
+</select> <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Телефон"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  >
+</label>
+ <label class="textarea">
+  <textarea class="textarea__field" placeholder="Напишите пару интересных слов о нашей работе :)"></textarea>
+</label>
+
+
+                    <label class="input-attach">
+                        <input
+                          class="input-attach__field"
+                          name="user_file"
+                          type="file"
+                        >
+                        <span class="input-attach__box-icon">
+                        <svg class="input-attach__icon">
+                          <use xlink:href="./img/common/attach-white.svg#attach-white" />
+                        </svg>
+                      </span>
+                        <span class="input-attach__text link link--underlined"><span class="link__text">Прикрепить файл</span></span>
+                      </label>
+                    <div class="form-bottom-send">
+                        <button class="button button--secondary button--icon-right nt-btn" type="button">         
+                            <span class="button__text">Отправить</span>
+                        </button>
+                        <p class="form-policy-in-btn">
+                            Нажимая кнопку “Отправить”, вы даете согласие на <br>обработку персональных данных
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+ <section class="poppa modal modal-thanks" id="thanks">
+    <div class="modal__inner">
+        <div class="modal-thanks__icon">
+            <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10L10 18L26 2" stroke="white" stroke-width="4"/>
+            </svg>
+        </div>
+        <h2 class="modal__title">Спасибо<br> за обращение</h2>
+        <div class="modal__group">
+            <p class="modal-thanks__text">Наш менеджер свяжется с вами<br> в ближайшее время</p>
+            <a class="modal-thanks__link" href="">Перейти на главную</a>
+        </div>
+    </div>
+</section>
+
+    <script src="./js/bundle.min.js?_v=20230217185727"></script>
+  </body>
+</html>

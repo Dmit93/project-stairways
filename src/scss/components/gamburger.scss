@@ -1,0 +1,18 @@
+.gamburger {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #E1E6EC;
+    padding: 12px 11px;
+    span {
+        width: 14px;
+        border-bottom: 2px solid var(--c-text-regular);
+        display: block;
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+        &:last-child {
+            width: 10px
+        }
+    }
+}

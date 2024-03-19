@@ -1,0 +1,129 @@
+:root {
+  --accordion-border-color: #DDE0E3;
+}
+
+.accordion {
+  border-top: 1px solid var(--accordion-border-color);
+  --icon-size: 48px;
+  --icon-mr: 1rem;
+}
+
+.accordion:last-of-type {
+  border-bottom: 1px solid var(--accordion-border-color);
+}
+
+.accordion__head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0;
+  padding-right: 0;
+}
+
+@media (max-width: 1300px) {
+  .accordion__head {
+    padding: 8px 0;
+  }
+}
+
+.accordion__icon {
+  --size: var(--icon-size);
+  min-width: var(--size);
+  max-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  display: block;
+  margin-right: var(--icon-mr);
+}
+
+@media (max-width: 1300px) {
+  .accordion__icon {
+    --icon-size: 40px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .accordion__icon {
+    --icon-size: 30px;
+    margin-right: 13px;
+  }
+}
+
+.accordion__title {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1300px) {
+  .accordion__title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .accordion__title {
+    font-size: 14px;
+    width: 85%;
+  }
+}
+
+.accordion__body {
+  padding: 0.1875rem 1.5rem 1.5rem;
+}
+
+.accordion .bayan__toggler {
+  --width: 12px;
+  --height: 14px;
+  width: var(--width);
+  min-width: var(--width);
+  max-width: var(--width);
+  height: var(--height);
+  display: block;
+  margin-left: auto;
+  background-image: url("../img/common/angle-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .accordion .bayan__toggler {
+    --width: 8px;
+    --height: 4px;
+  }
+}
+
+/**
+ * States
+ */
+.accordion.bayan--opened {
+  background: #F5F5F5;
+}
+
+.accordion--has-icon .accordion__body {
+  padding-left: #{'calc(0.5rem + var(--icon-size) + var(--icon-mr))'};
+  padding-top: 0.5rem;
+  @media (max-width: 1300px) {
+      padding-left: calc(-0.5rem + var(--icon-size) + var(--icon-mr));
+  }
+}
+
+
+@media (max-width: 650px) {
+  .accordion--has-icon .accordion__body {
+    padding-left: 10px;
+  }
+}
+
+.accordion__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--c-text-regular);
+}
+
+@media (max-width: 1300px) {
+  .accordion__desc {
+    font-size: 12px;
+  }
+}

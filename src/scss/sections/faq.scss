@@ -1,0 +1,19 @@
+.faq__title {
+    margin-bottom: 58px;
+    @media (max-width:1300px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 650px) {
+        margin-bottom: 27px;
+        font-size: 24px;
+    }
+}
+.faq__button {
+    margin-top: 45px;
+    @media (max-width: 1300px) {
+        margin-top: 24px;
+    }
+    @media (max-width: 650px) {
+        margin-top: 24px;
+    }
+}

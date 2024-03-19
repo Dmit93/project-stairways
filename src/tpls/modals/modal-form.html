@@ -1,0 +1,32 @@
+<section class="poppa modal" id="pod-callback">
+    <div class="modal__inner">
+        <h2 class="modal__title">Вам нужна винтовая лестница <br> на металлокаркасе?</h2>
+        <div class="modal__group">
+            <form action="./callback.php" class="form-callback shifter__form">
+                <fieldset class="radio__row">
+                    <label class="radio">
+                        <input type="radio" name="user_connect" class="radio__input">
+                        <span class="radio__check"></span>
+                        <span class="radio__title">Телефон</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="user_connect" class="radio__input">
+                        <span class="radio__check"></span>
+                        <span class="radio__title">Telegram</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="user_connect" class="radio__input">
+                        <span class="radio__check"></span>
+                        <span class="radio__title">WhatsApp</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-callback__row">
+                    @@include('../inputs/tel.html',{}) @@include('../inputs/name.html',{})
+                    <button class="button button--secondary button--icon-right nt-btn" type="submit">         
+                      <span class="button__text">Отправить</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
